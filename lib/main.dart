@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-
 import 'pages/control_flow.dart';
+import 'pages/login.dart';
+import 'pages/widget_layout.dart';
 
 // Fungsi utama aplikasi yang menjalankan widget MyApp.
 void main() {
@@ -83,6 +84,34 @@ class CourseHomePage extends StatelessWidget {
                           ),
                         );
                       },
+                    ),
+                  ),
+                  const SizedBox(height: 8),
+                  SizedBox(
+                    width: double.infinity,
+                    child: ElevatedButton(
+                      onPressed: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute<void>(
+                            builder: (context) => const WidgetLayoutPage(),
+                          ),
+                        );
+                      },
+                      child: const Text('latihan widget_layout'),
+                    ),
+                  ),
+                  const SizedBox(height: 8),
+                  SizedBox(
+                    width: double.infinity,
+                    child: ElevatedButton(
+                      onPressed: () {
+                        Navigator.of(context).push(
+                          MaterialPageRoute<void>(
+                            builder: (context) => const LoginPage(),
+                          ),
+                        );
+                      },
+                      child: const Text('Login'),
                     ),
                   ),
                 ],

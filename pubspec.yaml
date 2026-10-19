@@ -55,6 +55,7 @@ flutter:
   assets:
     - asset/bg_app.jpg
     - asset/logo_unhasy.png
+    - asset/rizal.jpg
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
